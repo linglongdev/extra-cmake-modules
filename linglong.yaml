@@ -16,7 +16,7 @@ source:
   commit: a346689d13dc35e485e6221f1c8d91dfacad1cdc
 
 depends:
-  - id: cmake/3.25.1-1
+  - id: cmake/3.25.1.1
 
 variables:
   extra_args: |
