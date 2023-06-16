@@ -1,0 +1,26 @@
+package:
+  id: extra-cmake-modules
+  name: extra-cmake-modules
+  version: 5.90.0
+  kind: lib
+  description: |
+    extra-cmake-modules.
+
+base:
+  id: org.deepin.base
+  version: 23.0.0
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/extra-cmake-modules.git
+  commit: a346689d13dc35e485e6221f1c8d91dfacad1cdc
+
+depends:
+  - id: cmake/3.25.1-1
+
+variables:
+  extra_args: |
+    -DBUILD_TESTING=OFF
+
+build:
+  kind: cmake
